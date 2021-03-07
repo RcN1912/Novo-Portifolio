@@ -21,7 +21,7 @@ text-decoration: none;
     top:0%;
     left:0%;
     transform: translateY(-100%);
-    transition: transform 600ms ease;
+    transition: transform 500ms ease-in-out;
     color:#6C63FF;
     background-color: #6C63FF ;
     z-index: 10;
