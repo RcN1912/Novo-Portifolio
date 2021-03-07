@@ -13,6 +13,11 @@ body {
 a {
 text-decoration: none;
 }
+.container {
+    position: relative;
+    width:100vw;
+    height: 100%;
+}
 /*--------------------------------------MENU--------------------------------------*/
 .Menu {
     position: absolute;
@@ -91,6 +96,8 @@ text-decoration: none;
     left:0;
     background-color:#6C63FF;
     clip-path: circle(13% at 20% 30%);
+    animation: floating 5s ease-in-out infinite;
+    animation-delay: 0s;
 }
 .Circle02 {
     position: absolute;
@@ -99,7 +106,9 @@ text-decoration: none;
     top:0;
     left:0;
     background-color:rgba(78, 69, 248, 0.9);
-    clip-path: circle(10% at 20% 10%);
+    clip-path: circle(10% at 20% 12%);
+    animation: floating 5s ease-in infinite;
+    animation-delay: 0s;
 }
 .Circle03 {
     position: absolute;
@@ -109,11 +118,24 @@ text-decoration: none;
     left:0;
     background-color:rgba(87, 78, 245, 0.9);
     clip-path: circle(10% at 80% 20%);
+    animation: floating 5s ease-in-out infinite;
+    animation-delay: 0s;
+}
+@keyframes floating {
+    0% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
 }
 /*--------------------------------------ABOUT--------------------------------------*/
 .About {
     width:100vw;
-    height:100vh;
+    height:100%;
     margin-top:100%;
     background-color: #6C63FF;
 }
