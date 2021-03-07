@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 /*--------------------------------------RESET--------------------------------------*/
 * {
     margin:0%;
     padding:0%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto';
     color:#ffffff;
 }
 body {
@@ -75,6 +77,7 @@ text-decoration: none;
 }
 .Home h1 {
     position: absolute;
+    font-family: 'Anton';
     width:80%;
     top:0;
     left:0;
@@ -84,9 +87,11 @@ text-decoration: none;
     font-size: 1.6em;
     text-transform: uppercase;
     z-index: 2;
+    animation: floating 2.5s ease-in-out infinite;
 }
 .Home span {
     color:#6C63FF;
+    font-family: 'Anton';
 }
 .Circle01 {
     position: absolute;
@@ -95,7 +100,7 @@ text-decoration: none;
     top:0;
     left:0;
     background-color:#6C63FF;
-    clip-path: circle(13% at 20% 30%);
+    clip-path: circle(13% at 10% 30%);
     animation: floating 5s ease-in-out infinite;
     animation-delay: 0s;
 }
@@ -106,7 +111,7 @@ text-decoration: none;
     top:0;
     left:0;
     background-color:rgba(78, 69, 248, 0.9);
-    clip-path: circle(10% at 20% 12%);
+    clip-path: circle(10% at 10% 12%);
     animation: floating 5s ease-in infinite;
     animation-delay: 0s;
 }
@@ -133,6 +138,21 @@ text-decoration: none;
     }
 }
 /*--------------------------------------ABOUT--------------------------------------*/
+.about {
+    width:100vw;
+    height: 100%;
+    margin-top: 100%;
+    background-color: #6C63FF;
+}
+.about h2 {
+    font-family: 'Anton';
+    text-transform: uppercase;
+    text-align: center;
+}
+.about p {
+    text-transform: uppercase;
+    text-align: center;
+}
 .About {
     width:100vw;
     height:100%;
@@ -143,9 +163,13 @@ text-decoration: none;
     width:100%;
 }
 .About h2 {
+    font-family: 'Anton';
     text-transform: uppercase;
     text-align: center;
-    z-index:2;
+}
+.About p {
+    text-transform: uppercase;
+    text-align: center;
 }
 .Wave01 {
     position: absolute;
