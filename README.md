@@ -1,2 +1,2 @@
-# Novo-Portifolio
- Meu novo portifolio com design novo 
+# Portifolio
+ Meu portifólio criado para a amostra de minhas habilidades 
