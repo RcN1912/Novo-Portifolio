@@ -165,8 +165,13 @@ header {
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 5%;
+    animation: floating 5s ease-in-out infinite;
 }
-.socialMediaLink{}
+.socialMediaLink{
+    left: 0;
+    margin-left: 20%;
+    animation: floating 5s ease-in-out infinite;
+}
 /*--------------------------------------knowledge--------------------------------------*/
 .knowledge {
     width:100vw;
