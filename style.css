@@ -30,14 +30,14 @@ header {
     height:100%;
     top:0%;
     left:0%;
-    transform: translateY(-100%);
-    transition: transform 900ms ease-in-out;
+    transform: translateX(-100%);
+    transition: transform 500ms ease;
     color:#6C63FF;
     background-color: #6C63FF ;
     z-index: 10;
 }
 .Menu_Open {
-    transform: translateY(0%);
+    transform: translateX(0%);
 }
 .ButtonMenu {
     display:block;
@@ -60,6 +60,7 @@ header {
     padding:20px 20px;
     border-bottom:1px solid #262626;
     background-color: #6C63FF ;
+    cursor: pointer;
 }
 .MenuItem_action {
     text-decoration: none;
@@ -153,10 +154,24 @@ header {
 .about img {
     width:100%;
 }
+/*--------------------------------------socialMedia--------------------------------------*/
+.socialMedia {
+    width:100%;
+    height:auto;
+    margin-top: 50%;
+}
+.socialMedia h2 {
+    font-family: 'Anton';
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.socialMediaLink{}
+/*--------------------------------------knowledge--------------------------------------*/
 .knowledge {
     width:100vw;
     height:100%;
-    margin-top:100%;
+    margin-top:50%;
     background-color: #6C63FF;
 }
 .knowledge img {
