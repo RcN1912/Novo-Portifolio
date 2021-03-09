@@ -155,10 +155,18 @@ header {
     width:100%;
 }
 /*--------------------------------------socialMedia--------------------------------------*/
+.containerSocialMedia {
+    width: 300px;
+    left:0;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
 .socialMedia {
     width:100%;
     height:auto;
     margin-top: 50%;
+    justify-content: center;
 }
 .socialMedia h2 {
     font-family: 'Anton';
@@ -168,8 +176,6 @@ header {
     animation: floating 5s ease-in-out infinite;
 }
 .socialMediaLink{
-    left: 0;
-    margin-left: 20%;
     animation: floating 5s ease-in-out infinite;
 }
 /*--------------------------------------knowledge--------------------------------------*/
@@ -201,4 +207,23 @@ header {
     left:0;
     width:100%;
     margin-top:0%;
+}
+@media screen and (min-width:480px){
+    .containerSocialMedia {
+        width: 300px;
+        left:0;
+        margin-left:17%;
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+}
+@media screen and (min-width:720px) {
+    .containerSocialMedia {
+        width: 300px;
+        left:0;
+        margin-left: 28%;
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
