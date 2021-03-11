@@ -218,11 +218,11 @@ header {
         
     }
 }
-@media screen and (max-width:720px) {
+@media screen and (min-width:720px) {
     .containerSocialMedia {
         width: 300px;
         left:0;
-        margin-left: 27%;
+        margin-left: 26%;
         display: flex;
         justify-content: space-evenly;
     }
