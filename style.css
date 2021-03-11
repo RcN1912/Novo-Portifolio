@@ -222,7 +222,7 @@ header {
     .containerSocialMedia {
         width: 300px;
         left:0;
-        margin-left: 28%;
+        margin-left: 27%;
         display: flex;
         justify-content: space-evenly;
     }
