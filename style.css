@@ -337,6 +337,9 @@ header {
         margin-left: 27%;
         width: 300px;
     }
+    .socialMedia {
+        margin-top: 10%;
+    }
     .progress {
         margin-top: 50%;
         position: relative;
@@ -356,6 +359,9 @@ header {
     }
     .progressContainer:nth-child(3) {
         margin-right: 0%;
+        position: relative;
+        width:29%;
+        flex-direction: column;
     }
 }
 @media screen and (min-width:1024px) {
