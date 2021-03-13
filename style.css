@@ -23,6 +23,9 @@ ul {
     width:100vw;
     height: 100%;
 }
+h2 {
+    font-family: 'Anton';
+}
 /*--------------------------------------MENU--------------------------------------*/
 header {
     background-color: #6C63FF;
@@ -88,7 +91,8 @@ header {
     font-size: 2em;
     text-transform: uppercase;
     z-index: 2;
-    animation: floating 2.5s ease-in-out infinite;
+    animation: floating 2s ease infinite;
+    animation-delay: 0s;
 }
 .Home span {
     color:#6C63FF;
@@ -101,8 +105,8 @@ header {
     top:0;
     left:0;
     background-color:#6C63FF;
-    clip-path: circle(10% at 10% 25%);
-    animation: floating 5s ease-in-out infinite;
+    clip-path: circle(7% at 10% 23%);
+    animation: floating 2s ease infinite;
     animation-delay: 0s;
 }
 .Circle02 {
@@ -112,8 +116,8 @@ header {
     top:0;
     left:0;
     background-color:rgba(78, 69, 248, 0.9);
-    clip-path: circle(8% at 10% 9%);
-    animation: floating 5s ease-in infinite;
+    clip-path: circle(7% at 10% 9%);
+    animation: floating 2s ease infinite;
     animation-delay: 0s;
 }
 .Circle03 {
@@ -123,8 +127,8 @@ header {
     top:0;
     left:0;
     background-color:rgba(87, 78, 245, 0.9);
-    clip-path: circle(8% at 80% 15%);
-    animation: floating 5s ease-in-out infinite;
+    clip-path: circle(7% at 80% 15%);
+    animation: floating 2s ease infinite;
     animation-delay: 0s;
 }
 @keyframes floating {
@@ -150,7 +154,6 @@ header {
 }
 .about h2 {
     font-size: 2em;
-    font-family: 'Anton';
     text-transform: uppercase;
     text-align: center;
 }
@@ -163,6 +166,106 @@ header {
 .about img {
     width:100%;
 }
+/*--------------------------------------Progress--------------------------------------*/
+.progress {
+    margin-top: 50%;
+    position: relative;
+    width:100%;
+    height:400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.progress h1 {
+    font-family:'Anton';
+    font-size:2.3em;
+    margin-bottom:3%;
+}
+.progressContainer {
+    position: relative;
+    width:300px;
+    height:400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #6c63ff;
+    border-radius: 9px;
+    margin-bottom:3% ;
+}
+.progressJavascript h2 {
+    color: #F0DB4F;
+}
+.progressCss h2 {
+    color:#379ad6;
+}
+.progressHtml h2 {
+    color:#e54d26;
+}
+.percent {
+    position: relative;
+    width: 150px;
+    height:150px;
+}
+
+.circleProgress {
+    position: relative;
+    width: 150px;
+    height:150px;
+}
+.percent circle {
+        width: 150px;
+        height:150px;
+        fill: none;
+        stroke-width: 10;
+        stroke: #181818;
+        stroke-linecap: round;
+        stroke-dasharray: 440;
+        stroke-dashoffset: 440;
+        transform: translate(5px,5px);
+}
+.circleProgress  :nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke:#181818;
+}
+.circleProgress  :nth-child(2) {
+    stroke-dashoffset: calc(440px - (440px * 50 / 100));
+    stroke:#F0DB4F;
+}
+.circleCss :nth-child(2) {
+    stroke-dashoffset: calc(440px - (440px * 70 / 100));
+    stroke:#379ad6;
+}
+.circleHtml :nth-child(2) {
+    stroke-dashoffset: calc(440px - (440px * 80 / 100));
+    stroke:#e54d26;
+}
+.number {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.number h2 {
+    font-size: 48px;
+
+}
+.number span {
+    font-size:24px;
+    color:#F0DB4F;
+}
+.numberCss span {
+    color:#379ad6;
+}
+.numberHtml span {
+    color:#e54d26;
+}
 /*--------------------------------------SOCIALMEDIA--------------------------------------*/
 .containerSocialMedia {
     width: 300px;
@@ -173,7 +276,7 @@ header {
 }
 .socialMedia {
     width:100%;
-    height:auto;
+    height:100%;
     margin-top: 50%;
     justify-content: center;
 }
@@ -182,16 +285,16 @@ header {
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 5%;
-    animation: floating 5s ease-in-out infinite;
+    animation: floating 2s ease infinite;
 }
 .socialMediaLink{
-    animation: floating 5s ease-in-out infinite;
+    animation: floating 2s ease infinite;
 }
 /*--------------------------------------KNOWLEDGE--------------------------------------*/
 .knowledge {
     width:100%;
     height:100%;
-    margin-top:50%;
+    margin-top:70%;
     background-color: #6C63FF;
 }
 .knowledge img {
@@ -220,9 +323,10 @@ header {
     width:100%;
     margin-top:0%;
 }
-@media screen and (max-width:480px){
+@media screen and (min-width:480px){
     .containerSocialMedia {
         margin-left:17%;
+        width: 300px;
     }
 }
 @media screen and (min-width:720px) {
@@ -231,6 +335,27 @@ header {
     }
     .containerSocialMedia {
         margin-left: 28%;
+        width: 300px;
+    }
+    .progress {
+        margin-top: 50%;
+        position: relative;
+        width:100%;
+        height:400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    
+    }
+    .progressContainer {
+        position: relative;
+        width:30%;
+        margin-right: 5%;
+        flex-direction: column;
+    }
+    .progressContainer:nth-child(3) {
+        margin-right: 0%;
     }
 }
 @media screen and (min-width:1024px) {
@@ -267,7 +392,7 @@ header {
         animation: floating 2.5s ease-in-out infinite;
     }
     .Circle01 {
-        clip-path: circle(7% at 12% 22%);
+        clip-path: circle(7% at 12% 20%);
     }
     .Circle02 {
         clip-path: circle(7% at 10%  8%);
@@ -294,7 +419,8 @@ header {
     }
     /*--------------------------------------SOCIAL MEDIA--------------------------------------*/
     .socialMedia {
-        margin-top: 30%;
+        margin-top: 10%;
+        margin-bottom: 3%;
     }
     .socialMedia h2 {
         font-size:3em;
@@ -318,5 +444,10 @@ header {
     .knowledge p {
         margin-left:40%;
         margin-right: 2%;
+    }
+}
+@media screen and (min-width:1336px) {
+    .containerSocialMedia {
+        margin-left: 38%;
     }
 }
