@@ -340,6 +340,12 @@ header {
     .socialMedia {
         margin-top: 10%;
     }
+    .progressContainer {
+        position: relative;
+        width:29%;
+        margin-right: 5%;
+        flex-direction: column;
+    }
     .progress {
         margin-top: 100%;
         position: relative;
@@ -350,12 +356,6 @@ header {
         align-items: center;
         flex-direction: row;
     
-    }
-    .progressContainer {
-        position: relative;
-        width:29%;
-        margin-right: 5%;
-        flex-direction: column;
     }
     .progressContainer:nth-child(3) {
         margin-right: 0%;
