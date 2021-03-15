@@ -217,7 +217,7 @@ header {
 }
 .percent circle {
         width: 150px;
-        height:150px;
+        height:300px;
         fill: none;
         stroke-width: 10;
         stroke: #181818;
@@ -272,12 +272,12 @@ header {
     left:0;
     display: flex;
     justify-content: space-evenly;
-    
+    flex-direction: row;
 }
 .socialMedia {
     width:100%;
     height:100%;
-    margin-top: 50%;
+    margin-top: 10%;
     justify-content: center;
 }
 .socialMedia h2 {
@@ -289,6 +289,7 @@ header {
 }
 .socialMediaLink{
     animation: floating 2s ease infinite;
+    margin-left: 0%;
 }
 /*--------------------------------------KNOWLEDGE--------------------------------------*/
 .knowledge {
@@ -334,30 +335,10 @@ header {
         font-size: 2.5em;
     }
     .containerSocialMedia {
-        margin-left: 30%;
+        margin-left:28%;
     }
     .socialMedia {
         margin-top: 10%;
-    }
-    .progressContainer {
-        position: relative;
-        width:29%;
-        margin-right: 5%;
-        flex-direction: column;
-    }
-    .progress {
-        margin-top: 100%;
-        position: relative;
-        width:100%;
-        height:400px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-    
-    }
-    .progressContainer:nth-child(3) {
-        margin-right: 0%;
     }
 }
 @media screen and (min-width:1024px) {
@@ -446,6 +427,26 @@ header {
     .knowledge p {
         margin-left:40%;
         margin-right: 2%;
+    }
+    .progressContainer {
+        position: relative;
+        width:29%;
+        margin-right: 5%;
+        flex-direction: column;
+    }
+    .progress {
+        margin-top: 100%;
+        position: relative;
+        width:100%;
+        height:400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    
+    }
+    .progressContainer:nth-child(3) {
+        margin-right: 0%;
     }
 }
 @media screen and (min-width:1336px) {
