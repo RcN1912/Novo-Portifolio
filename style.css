@@ -329,6 +329,11 @@ header {
     .conatinerSocialMedia {
         margin-left:0%;
     }
+    .progressContainer {
+        position: relative;
+        background-color: none;
+        margin-bottom:6% ;
+    }
 }
 @media screen and (min-width: 480px){
     .containerSocialMedia {
