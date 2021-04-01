@@ -325,18 +325,18 @@ header {
     width:100%;
     margin-top:0%;
 }
-@media screen and (max-width: 480px){
+@media screen and (min-width: 480px){
     .containerSocialMedia {
         margin-left: 15%;
         width: 300px;
     }
 }
-@media screen and (min-width:719px) {
+@media screen and (min-width:720px) {
     .Home h1 {
         font-size: 2.5em;
     }
     .containerSocialMedia {
-        margin-left:27%;
+        margin-left:28%;
     }
     .socialMedia {
         margin-top: 10%;
