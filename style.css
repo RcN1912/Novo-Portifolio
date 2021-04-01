@@ -191,9 +191,9 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #6c63ff;
+    background-color: none;
     border-radius: 9px;
-    margin-bottom:3% ;
+    margin-bottom:6% ;
 }
 .progressJavascript h2 {
     color: #F0DB4F;
@@ -270,6 +270,7 @@ header {
 .containerSocialMedia {
     width: 300px;
     left:0;
+    margin-left:0%;
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
@@ -324,7 +325,12 @@ header {
     width:100%;
     margin-top:0%;
 }
-@media screen and (max-width: 480px){
+@media screen and (min-width:320px) {
+    .conatinerSocialMedia {
+        margin-left:0%;
+    }
+}
+@media screen and (min-width: 480px){
     .containerSocialMedia {
         margin-left: 17%;
         width: 300px;
@@ -435,7 +441,7 @@ header {
         flex-direction: column;
     }
     .progress {
-        margin-top: 100%;
+        margin-top: 20%;
         position: relative;
         width:100%;
         height:400px;
