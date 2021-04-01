@@ -191,9 +191,9 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: none;
+    background-color: rgb(0, 0, 0,.3);
     border-radius: 9px;
-    margin-bottom:6% ;
+    margin-bottom:9% ;
 }
 .progressJavascript h2 {
     color: #F0DB4F;
@@ -325,19 +325,9 @@ header {
     width:100%;
     margin-top:0%;
 }
-@media screen and (min-width:320px) {
-    .conatinerSocialMedia {
-        margin-left:0%;
-    }
-    .progressContainer {
-        position: relative;
-        background-color: none;
-        margin-bottom:6% ;
-    }
-}
 @media screen and (min-width: 480px){
     .containerSocialMedia {
-        margin-left: 17%;
+        margin-left: 15%;
         width: 300px;
     }
 }
